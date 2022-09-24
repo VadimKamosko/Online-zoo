@@ -1,3 +1,8 @@
+body
+{
+    margin: 0px;
+    background: black;
+}
 *
 {
     font-style: Roboto;
@@ -17,7 +22,7 @@ a{
 {
     width: 1600px;
     margin: auto;
-    max-height: 780px;
+    background: white;
 }
 .container_header_nav
 {
@@ -164,13 +169,15 @@ a{
     position: relative;
     align-items: center;
     flex-direction: row;
-    padding-left: 145px;
+    flex-wrap: wrap;
+    margin-top: 120px;
 }
 .card_animal
 {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
+    margin-left: 145px;
 }
 .secondSection_article
 {
@@ -205,6 +212,7 @@ a{
     margin-top: 8px;
     margin-left: 16px;
     margin-bottom: 14px;
+    justify-content: space-between;
 }
 .secondSection_article_container_text
 {
@@ -219,4 +227,113 @@ a{
     background: orange;
     border-radius: 50%;
     position: relative;
+}
+.btn_left
+{
+    left: 145px;
+}
+.flower_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -240px;
+    align-items: end;
+}
+.SecondSection_flowerimg_left
+{
+    background: url("../img/palm_foto.png") no-repeat;
+    height: 460px;
+    width: 368px;
+}
+.SecondSection_flowerimg_right
+{
+    background: url("../img/strelitzia\ 1.png") no-repeat;
+    background-size: cover;
+    width: 368px;
+    height: 275px;
+}
+.SecondSection_flower_container_button
+{
+    left:0px;
+    top: -104px;
+}
+.discription_img_food
+{
+    margin-right: 8px;
+}
+/* Third section */
+.thirdSection
+{
+    background:rgba(254, 210, 144, 0.7);
+    justify-content: center;
+    display: flex;
+}
+
+.thirdSection_container
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: rgba(253, 253, 255, 0.52);
+    margin: 69px 220px 100px 220px;
+}
+.thirdSection_container_widgets
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.thirdSection_container_widgets_img_container
+{
+    width: 168px;
+    height: 168px;
+    background: white;
+    display: flex;
+}
+.thirdSection_container_widgets_img
+{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.thirdSection_container_widgets_text
+{
+    max-width: 168px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.arrow_img
+{
+    margin: 30px;
+    margin-bottom: 53px;
+}
+.thirdSection_container_header
+{
+    font-size: 58px;;
+    margin-top: 41px;
+    margin-bottom: 30px;
+    color: rgba(254, 144, 19, 1);
+}
+.thirdSection_container_text
+{
+    text-align: left;
+    margin-left: 99px;
+    margin-right: 99px;
+}
+.thirdSection_container_text_p
+{
+    font-size: 24px;
+}
+.thirdSection_container_button
+{
+    top: 0px;
+    left: 0px;
+    margin-top: 60px;
+    margin-bottom: 59px;
+
 }
