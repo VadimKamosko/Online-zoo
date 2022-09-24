@@ -2,6 +2,8 @@ body
 {
     margin: 0px;
     background: black;
+    max-width: 1600px;
+    margin: auto;
 }
 *
 {
@@ -13,10 +15,11 @@ a{
 /* Header */
 .container_header
 {
+    position: relative;
     background: url("../img/6c4379c95b7fac4756f94f501e2105b7.jpg") no-repeat center;
     background-size: cover;
-    max-width: 1600px;
-    height: 780px;
+    max-width: 100%;
+    margin: auto;
 }
 .container
 {
@@ -336,4 +339,88 @@ a{
     margin-top: 60px;
     margin-bottom: 59px;
 
+}
+/* fourth section */
+.fourthsection
+{
+    position: relative;
+    display: flex;
+    max-width: 1160px;
+    flex-direction: column;
+    margin-left: 220px;
+    margin-top: 140px;
+    text-align: center;
+    align-items: center;
+}
+.fourthsection_article_conteiner
+{
+    display: flex;
+    flex-direction: row;
+}
+.fourthsection_article
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 25%;
+    border: 2px solid;
+    border-image: linear-gradient(rgba(254, 189, 171, 0.74),
+    rgba(243, 169, 248, 0.66),
+    rgba(224, 216, 240, 1),
+    rgba(234, 247, 254, 1),
+    rgba(234, 247, 254, 1));
+    border-radius: 20px;
+    background: #F1F3F2;
+    margin-right: 30px;
+}
+.fourthsection_action_user
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 15px 10px 16px;
+}
+.fourthsection_action_user_name, .fourthsection_action_user_local
+{
+    margin: 0px;
+    margin-left: 10px;
+    text-align: left;
+}
+.fourthsection_action_user_comment
+{
+    margin: 0px 15px 19px 16px;
+    text-align:left
+}
+.fourthsection_progress
+{
+    position: relative;
+    width: 70%;
+    margin-top: 21px;
+    margin-bottom: 31px;
+}
+.fourthsection_container_btn
+{
+    width: 100%;
+    text-align: start;
+}
+.fourthsection_btn
+{
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin-bottom: 180px;
+}
+.fourthsection_header
+{
+    font-size: 36px;
+    font-weight: 400;
+}
+.fourthsection_img
+{
+    background: url(../img/leav_foto.png);
+    height: 295px;
+    width: 300px;
+    position: absolute;
+    top: 515px;
+    right: -273px;
 }
