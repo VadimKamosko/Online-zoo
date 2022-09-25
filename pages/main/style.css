@@ -382,20 +382,31 @@ a{
     display: flex;
     flex-direction: row;
 }
+.fourthsection_article::before
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(rgba(254, 189, 171, 0.74),
+    rgba(243, 169, 248, 0.66),
+    rgba(224, 216, 240, 1),
+    rgba(234, 247, 254, 1),
+    rgba(234, 247, 254, 1));
+    border-radius: 20px;
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    
+}
 .fourthsection_article
 {
     display: flex;
     position: relative;
     flex-direction: column;
     max-width: 25%;
-    border: 2px solid;
-    border-image: linear-gradient(rgba(254, 189, 171, 0.74),
-    rgba(243, 169, 248, 0.66),
-    rgba(224, 216, 240, 1),
-    rgba(234, 247, 254, 1),
-    rgba(234, 247, 254, 1));
-    border-radius: 20px;
     background: #F1F3F2;
+    border-radius: 20px;
     margin-right: 30px;
 }
 .fourthsection_action_user
@@ -446,7 +457,7 @@ a{
     height: 295px;
     width: 300px;
     position: absolute;
-    top: 572px;
+    bottom: 0px;
     right: -273px;
 }
 /* footer */

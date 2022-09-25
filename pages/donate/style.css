@@ -1,0 +1,270 @@
+*
+{
+    margin: 0px;
+}
+p
+{
+    color: white;
+}
+.donate_section
+{
+    background: radial-gradient(rgba(254, 210, 144, 0.7),
+    rgba(254, 189, 171, 1),
+    rgba(254, 210, 144, 0.7));
+    padding-bottom: 180px;
+}
+.donate_section_container
+{
+    max-width: 1160px;
+    margin: auto;
+}
+.donate_section_header
+{
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+.donate_section_subheader
+{
+    margin-top: 40px;
+    color: orange;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.donate_section_info_heder
+{
+    text-align: center;
+    color: rgba(254, 144, 19, 1);
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.donate_section_info
+{
+    background:rgba(255, 255, 255, 0.52);
+    display: flex;
+    flex-direction: column;
+}
+.donate_section_info_text
+{
+    color:black;
+    margin-left: 92px;
+}
+.donate_img_price
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.donate_img_price_count
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.donate_img_price_mark
+{
+    color: black;
+    margin-right: 64px;
+}
+.donate_img_price_count_count
+{
+    font-weight: 500;
+    font-size: 72px;
+}
+
+.radio_container
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 976px;
+    margin-left: 92px;
+    margin-right: 92px;
+    background-color: #404950;
+    height: 27px;
+    align-items: center;
+    padding-left: 26px;
+    padding-right: 30px;
+}
+
+/* Radio */
+
+.form_radio {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label.price
+{
+    color: black;
+    position: absolute;
+    /* top: 20px;
+    left:-50%;
+    transform:translate(-50%); */
+    position: absolute;
+    top: 37px;
+    left: -13px;
+}
+.form_radio input[type=radio]:checked ~label.price
+{
+    color: orange !important;
+}
+.form_radio label.circle{
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-right: 0;
+	user-select: none;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 10px;
+	height: 10px;
+}
+
+.form_radio label.circle:before,.form_radio label.circle::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label.circle:before {
+    width: 10px;
+	height: 10px;
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px solid orange;
+    top: -7px;
+    left: -7px;
+}
+.form_radio input[type=radio]:checked + label.circle:after {
+    width: 10px;
+	height: 10px;
+    border-radius: 50%;
+    padding: 16px;
+    border: 1px solid orange;
+    top: -17px;
+    left: -17px;
+}
+ 
+/* Hover */
+.form_radio label.circle:hover:before {
+	filter: brightness(120%);
+}
+/* endRadio */
+
+.line_container
+{
+    width: 20%;
+    position: relative;
+}
+.hr-line
+{
+    border: 3px solid #72828E;
+    width: 100%;
+}
+.donate_img_price__text
+{
+    margin-left: 96px;
+    margin-bottom: 10px;
+}
+.donate_form_input
+{
+    width: 268px;
+    height: 54px;
+    background-color: transparent;
+    border:1px solid rgba(146, 150, 153, 1);
+    color:rgba(146, 150, 153, 1);
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 4px;
+}
+.donate_form_input_placeholder
+{
+    position: absolute;
+    color:rgba(146, 150, 153, 1);
+    left: 245px;
+    top:18px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.donate_form_input_container
+{
+    position: relative;
+    display: flex;
+}   
+.donate_form
+{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 92px;
+    flex-direction: column
+}
+
+/* Radio */
+.form_radio_period {
+	margin-top: 25px;
+    width: 274px;
+    display: flex;
+    justify-content: center;
+}
+.form_radio_period input[type=radio] {
+	display: none;
+}
+.form_radio_period label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio_period label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	border-radius: 50%;
+    border: 1px solid orange;
+}
+ 
+/* Checked */
+.form_radio_period input[type=radio]:checked + label:before {
+	background: yellow;
+}
+ 
+/* Hover */
+.form_radio_period label:hover:before {
+	filter: brightness(120%);
+}
+
+.donate_form_btn
+{
+    margin-top: 31px;
+    top: 0px;
+    left: 0px;
+}
+.share_friends
+{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 61px;
+}
